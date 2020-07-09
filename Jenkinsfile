@@ -8,6 +8,13 @@ try {
       checkout scm
     }
   }
+  
+  // Debugging
+  stage('debug') {
+	steps {
+		sh 'whoamii'
+		}
+	}
 
   // Run terraform init
   stage('init') {
