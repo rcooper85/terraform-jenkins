@@ -13,7 +13,7 @@ try {
   stage('debug') {
 	node {
 	ansiColor('xterm') {
-		sh 'whoami'
+		sh 'terraform --version'
 	  }
 	}
   }
