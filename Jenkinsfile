@@ -13,7 +13,7 @@ try {
   stage('debug') {
 	node {
 	ansiColor('xterm') {
-		sh 'sudo terraform --version'
+		sh '/usr/local/bin/terraform --version'
 	  }
 	}
   }
