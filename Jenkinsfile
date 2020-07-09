@@ -11,8 +11,8 @@ try {
   
   // Debugging
   stage('debug') {
-	steps {
-		sh 'whoamii'
+	ansiColor('xterm') {
+		sh 'whoami'
 		}
 	}
 
