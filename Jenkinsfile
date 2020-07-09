@@ -11,10 +11,12 @@ try {
   
   // Debugging
   stage('debug') {
+	node {
 	ansiColor('xterm') {
 		sh 'whoami'
-		}
+	  }
 	}
+  }
 
   // Run terraform init
   stage('init') {
